@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    {{>metalinks}}
+  </head>
+  <body>
+    <!-- navbar  -->
+    {{>navbar}}
+
+    <!-- main content -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">   
+            <div class="search">
+                <form class="forms">
+                    <input type="text" placeholder="Enter a city..." id="cityInput" autocomplete="off">
+                    <input type="submit" value="search" class="btn" id="submitbtn">
+                </form>
+            </div>   
+            <div class="main-div">
+                 <div class="first-div">
+                     <p id="day">Monday</p>
+                     <p id="date">25 Oct</p>
+                 </div>
+                 <div class="second-div">
+                    <div class="temp">
+                        <p id="cityName">pune ,IN</p>
+                        <h1 id="cityTemp">25 <sup>o</sup>C</h1>
+                    </div>
+                    <div class="icon" id="tempMood">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+   {{>footers}}
+  </body>
+</html>
